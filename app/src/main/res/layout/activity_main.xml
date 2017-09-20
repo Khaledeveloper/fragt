@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.khaled.fragments.MainActivity">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fragment1"
+            android:onClick="Fragment1"
+            android:id="@+id/Fragment1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment2"
+            android:onClick="Fragment2"
+            android:id="@+id/Fragment2"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/fragmentMain"
+            android:name="com.example.khaled.fragments.Fragment1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+           />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
